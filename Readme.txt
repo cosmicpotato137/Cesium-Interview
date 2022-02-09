@@ -2,13 +2,13 @@ I haven't finished yet, but I plan to keep working on things. I made a comment i
 
 You can build the project on windows using:
 
-'''mkdir build'''
-'''cd build'''
-'''cmake ..'''
+* `mkdir build`
+* `cd build`
+* `cmake ..`
 
 Windows / Ubuntu:
 
-'''mkdir build'''
-'''cd build'''
-'''cmake ..'''
-'''make'''
+* `mkdir build`
+* `cd build`
+* `cmake ..`
+* `make`
