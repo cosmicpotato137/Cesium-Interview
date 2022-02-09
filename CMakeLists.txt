@@ -50,9 +50,13 @@ include_directories(${INCLUDE_DIRS})
 link_directories(${LIBRARY_DIRS})
 
 
-set(SOURCES 
-	src/ppm_image.h
-	src/ppm_image.cpp)
+set(SOURCES
+	src/line.h
+	src/line.cpp
+	src/SurfaceHeight.h
+	src/SurfaceHeight.cpp
+	src/read_data.h
+	src/read_data.cpp)
 
 add_executable(surface-height src/main.cpp ${SOURCES})
 
