@@ -1,4 +1,4 @@
-I haven't finished yet, but I plan to keep working on things. I made a comment in SurfaceHeight.cpp about my plan.
+Finished most of the algorithm. I just need to figure out how to switch triangles on the surface.
 
 You can build the project on windows using:
 
