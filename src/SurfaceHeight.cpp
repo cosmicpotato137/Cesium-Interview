@@ -62,8 +62,8 @@ float surfaceHeight(const char* data, vec2 start, vec2 end, int dim = expected_d
 		mp2.z = distToPlane(un, tri.p1, cp2);
 		dist += glm::distance(mp1, mp2);
 		
-	}
 	return dist;
+	}
 
 	// this is as far as I got, but I know how to finish:
 	// calculate the next point by using parametric line intersection
