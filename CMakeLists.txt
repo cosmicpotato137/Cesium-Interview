@@ -51,8 +51,6 @@ link_directories(${LIBRARY_DIRS})
 
 
 set(SOURCES
-	src/line.h
-	src/line.cpp
 	src/SurfaceHeight.h
 	src/SurfaceHeight.cpp
 	src/read_data.h
