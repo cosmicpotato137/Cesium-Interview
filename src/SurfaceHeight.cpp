@@ -61,6 +61,35 @@ float surfaceHeight(const char* data, vec2 start, vec2 end, int dim = expected_d
 		vec3 mp2 = vec3(cp2, 0);
 		mp2.z = distToPlane(un, tri.p1, cp2);
 		dist += glm::distance(mp1, mp2);
+
+		if (cp2 == (vec2)tri.p1)
+		{
+			tri.p2.x -= 2;
+			tri.p3.y -= 2;
+			// todo: reverse state?
+		}
+		else if (cp2 == (vec2)tri.p3)
+		{
+			tri.p2 += vec3(-2, 2, 0);
+			tri.p1.y += 2;
+		}
+		else if (cp2 == (vec2)tri.p2)
+		{
+			tri.p3 += vec3(2, -2, 0);
+			tri.p1.x += 2;
+		}
+		else if (cp2.x == tri.p1.x)
+		{
+			tri.p1.y += 1;
+			tri.p3.y -= 1;
+			tri.p2 += vec3(-2, 1, 0);
+		}
+		else if (cp2.y == tri.p1.y)
+		{
+			tri.p1.x += 1;
+			tri.p2.x -= 1;
+			tri.p3 += vec3(1, -2, 0);
+		}
 		
 	return dist;
 	}
